@@ -21,7 +21,7 @@ void playGame()
     int random_player = 0;
     int random_bot = 0;
 
-        cout << "\nÂû íà÷àëè èãðó, ðàçäàåì êàðòû...\n\n";
+        cout << "\nÐ’Ñ‹ Ð½Ð°Ñ‡Ð°Ð»Ð¸ Ð¸Ð³Ñ€Ñƒ, Ñ€Ð°Ð·Ð´Ð°ÐµÐ¼ ÐºÐ°Ñ€Ñ‚Ñ‹...\n\n";
         random_player = rand() % 8;
         random_bot = rand() % 8;
         player_Score = randomplayer(random_player);
@@ -29,8 +29,8 @@ void playGame()
         chislo(random_player);
         sum1_player = player_Score;
         sum1_bot = bot_Score;
-        cout << "Âàøè î÷êè: " << sum1_player << endl;
-        cout << "Âûáèðàéòå äåéñòâèå:\n1.Âçÿòü åùå êàðòó\n2.Äîñòàòî÷íî \nÂíèìàíèå! Âû ìîæåòå âçÿòü êàðòû âñåãî 4 ðàçà!\n";
+        cout << "Ð’Ð°ÑˆÐ¸ Ð¾Ñ‡ÐºÐ¸: " << sum1_player << endl;
+        cout << "Ð’Ñ‹Ð±Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ:\n1.Ð’Ð·ÑÑ‚ÑŒ ÐµÑ‰Ðµ ÐºÐ°Ñ€Ñ‚Ñƒ\n2.Ð”Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ \nÐ’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð²Ð·ÑÑ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ñ‹ Ð²ÑÐµÐ³Ð¾ 4 Ñ€Ð°Ð·Ð°!\n";
         cin >> G1;
 
         if (G1 == 1)
@@ -42,15 +42,15 @@ void playGame()
             chislo(random_player);
             sum2_player = player_Score + sum1_player;
             sum2_bot = bot_Score + sum1_bot;
-            cout << "Âàøè î÷êè: " << sum2_player << endl;
-            cout << "Âûáèðàéòå äåéñòâèå:\n1.Âçÿòü åùå êàðòó\n2.Äîñòàòî÷íî \nÂíèìàíèå! Âû ìîæåòå âçÿòü êàðòû âñåãî 4 ðàçà!\n";
+            cout << "Ð’Ð°ÑˆÐ¸ Ð¾Ñ‡ÐºÐ¸: " << sum2_player << endl;
+            cout << "Ð’Ñ‹Ð±Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ:\n1.Ð’Ð·ÑÑ‚ÑŒ ÐµÑ‰Ðµ ÐºÐ°Ñ€Ñ‚Ñƒ\n2.Ð”Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ \nÐ’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð²Ð·ÑÑ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ñ‹ Ð²ÑÐµÐ³Ð¾ 4 Ñ€Ð°Ð·Ð°!\n";
             cin >> G2;
         }
         else if (G1 == 2)
         {
             proschet(sum1_player, sum1_bot);
             chislo_bot(random_bot);
-            cout << "Î÷êè áîòà: " << sum1_bot << endl;
+            cout << "ÐžÑ‡ÐºÐ¸ Ð±Ð¾Ñ‚Ð°: " << sum1_bot << endl;
         }
 
         if (G2 == 1)
@@ -62,14 +62,14 @@ void playGame()
             chislo(random_player);
             sum3_player = player_Score + sum2_player;
             sum3_bot = bot_Score + sum2_bot;
-            cout << "Âàøè î÷êè: " << sum3_player << endl;
-            cout << "Âûáèðàéòå äåéñòâèå:\n1.Âçÿòü åùå êàðòó\n2.Äîñòàòî÷íî \nÂíèìàíèå! Âû ìîæåòå âçÿòü êàðòû âñåãî 4 ðàçà!\n";
+            cout << "Ð’Ð°ÑˆÐ¸ Ð¾Ñ‡ÐºÐ¸: " << sum3_player << endl;
+            cout << "Ð’Ñ‹Ð±Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ:\n1.Ð’Ð·ÑÑ‚ÑŒ ÐµÑ‰Ðµ ÐºÐ°Ñ€Ñ‚Ñƒ\n2.Ð”Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ \nÐ’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð²Ð·ÑÑ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ñ‹ Ð²ÑÐµÐ³Ð¾ 4 Ñ€Ð°Ð·Ð°!\n";
             cin >> G3;
         }
         else if (G2 == 2) {
             proschet(sum2_player, sum2_bot);
             chislo_bot(random_bot);
-            cout << "Î÷êè áîòà: " << sum2_bot << endl;
+            cout << "ÐžÑ‡ÐºÐ¸ Ð±Ð¾Ñ‚Ð°: " << sum2_bot << endl;
         }
 
         if (G3 == 1)
@@ -81,15 +81,15 @@ void playGame()
             chislo(random_player);
             sum4_player = player_Score + sum3_player;
             sum4_bot = bot_Score + sum3_bot;
-            cout << "Âàøè î÷êè: " << sum4_player << endl;
-            cout << "Âûáèðàéòå äåéñòâèå:\n1.Âçÿòü åùå êàðòó\n2.Äîñòàòî÷íî \nÂíèìàíèå! Âû ìîæåòå âçÿòü êàðòû âñåãî 4 ðàçà!\n";
+            cout << "Ð’Ð°ÑˆÐ¸ Ð¾Ñ‡ÐºÐ¸: " << sum4_player << endl;
+            cout << "Ð’Ñ‹Ð±Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ:\n1.Ð’Ð·ÑÑ‚ÑŒ ÐµÑ‰Ðµ ÐºÐ°Ñ€Ñ‚Ñƒ\n2.Ð”Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ \nÐ’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð²Ð·ÑÑ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ñ‹ Ð²ÑÐµÐ³Ð¾ 4 Ñ€Ð°Ð·Ð°!\n";
             cin >> G4;
         }
         else if (G3 == 2)
         {
             proschet(sum3_player, sum3_bot);
             chislo_bot(random_bot);
-            cout << "Î÷êè áîòà: " << sum3_bot << endl;
+            cout << "ÐžÑ‡ÐºÐ¸ Ð±Ð¾Ñ‚Ð°: " << sum3_bot << endl;
         }
 
         if (G4 == 1)
@@ -101,21 +101,21 @@ void playGame()
             chislo(random_player);
             sum5_player = player_Score + sum4_player;
             sum5_bot = bot_Score + sum4_bot;
-            cout << "Âàøè î÷êè: " << sum5_player << endl;
-            cout << "Âûáèðàéòå äåéñòâèå: 1.Äîñòàòî÷íî\n";
+            cout << "Ð’Ð°ÑˆÐ¸ Ð¾Ñ‡ÐºÐ¸: " << sum5_player << endl;
+            cout << "Ð’Ñ‹Ð±Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ: 1.Ð”Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾\n";
             cin >> GFINAL;
         }
         else if (G4 == 2)
         {
             proschet(sum4_player, sum4_bot);
             chislo_bot(random_bot);
-            cout << "Î÷êè áîòà: " << sum4_bot << endl;
+            cout << "ÐžÑ‡ÐºÐ¸ Ð±Ð¾Ñ‚Ð°: " << sum4_bot << endl;
         }
 
         if (GFINAL == 1) {
             proschet(sum5_player, sum5_bot);
             chislo_bot(random_bot);
-            cout << "Î÷êè áîòà: " << sum5_bot << endl;
+            cout << "ÐžÑ‡ÐºÐ¸ Ð±Ð¾Ñ‚Ð°: " << sum5_bot << endl;
             system("Pause");
         }
     }
