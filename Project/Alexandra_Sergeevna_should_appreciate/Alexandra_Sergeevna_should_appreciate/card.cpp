@@ -2,45 +2,71 @@
 #include "game.h"
 using namespace std;
 
-int chislo_bot(int random_bot)
-{
-    if (random_bot == 0)
-        cout << "[Последняя карта бота]: 7-ка.\n";
-    else if (random_bot == 1)
-        cout << "[Последняя карта бота]: 8-ка.\n";
-    else if (random_bot == 2)
-        cout << "[Последняя карта бота]: 9-ка.\n";
-    else if (random_bot == 3)
-        cout << "[Последняя карта бота]: 10-ка.\n";
-    else if (random_bot == 4)
-        cout << "[Последняя карта бота]: Валет.'2-очка'\n";
-    else if (random_bot == 5)
-        cout << "[Последняя карта бота]: Дама.'3-очка'\n";
-    else if (random_bot == 6)
-        cout << "[Последняя карта бота]: Король.'4-очка.'\n";
-    else if (random_bot == 7)
-        cout << "[Последняя карта бота]: Туз.'11-очков.'\n";
+int chislo_bot(int random_bot) {
+    cout << "[РџРѕСЃР»РµРґРЅСЏСЏ РєР°СЂС‚Р° Р±РѕС‚Р°]: ";
+    switch (random_bot) {
+    case 0:
+        cout << "7-РєР°.\n";
+        break;
+    case 1:
+        cout << "8-РєР°.\n";
+        break;
+    case 2:
+        cout << "9-РєР°.\n";
+        break;
+    case 3:
+        cout << "10-РєР°.\n";
+        break;
+    case 4:
+        cout << "Р’Р°Р»РµС‚.'2-РѕС‡РєР°'\n";
+        break;
+    case 5:
+        cout << "Р”Р°РјР°.'3-РѕС‡РєР°'\n";
+        break;
+    case 6:
+        cout << "РљРѕСЂРѕР»СЊ.'4-РѕС‡РєР°.'\n";
+        break;
+    case 7:
+        cout << "РўСѓР·.'11-РѕС‡РєРѕРІ.'\n";
+        break;
+    default:
+        cout << "РћС€РёР±РєР°.\n";
+        break;
+    }
     return random_bot;
 }
 
-int chislo(int random_player)
-{
-    if (random_player == 0)
-        cout << "[Выпавшая карта]: Вам выпала 7-ка.\n";
-    else if (random_player == 1)
-        cout << "[Выпавшая карта]: Вам выпала 8-ка.\n";
-    else if (random_player == 2)
-        cout << "[Выпавшая карта]: Вам выпала 9-ка.\n";
-    else if (random_player == 3)
-        cout << "[Выпавшая карта]: Вам выпала 10-ка.\n";
-    else if (random_player == 4)
-        cout << "[Выпавшая карта]: Вам выпал Валет.'2-очка'\n";
-    else if (random_player == 5)
-        cout << "[Выпавшая карта]: Вам выпала Дама.'3-очка'\n";
-    else if (random_player == 6)
-        cout << "[Выпавшая карта]: Вам выпал Король.'4-очка.'\n";
-    else if (random_player == 7)
-        cout << "[Выпавшая карта]: Вам выпал Туз.'11-очков'\n";
+int chislo(int random_player) {
+    cout << "[Р’С‹РїР°РІС€Р°СЏ РєР°СЂС‚Р°]: ";
+    switch (random_player) {
+    case 0:
+        cout << "Р’Р°Рј РІС‹РїР°Р»Р° 7-РєР°.\n";
+        break;
+    case 1:
+        cout << "Р’Р°Рј РІС‹РїР°Р»Р° 8-РєР°.\n";
+        break;
+    case 2:
+        cout << "Р’Р°Рј РІС‹РїР°Р»Р° 9-РєР°.\n";
+        break;
+    case 3:
+        cout << "Р’Р°Рј РІС‹РїР°Р»Р° 10-РєР°.\n";
+        break;
+    case 4:
+        cout << "Р’Р°Рј РІС‹РїР°Р» Р’Р°Р»РµС‚.'2-РѕС‡РєР°'\n";
+        break;
+    case 5:
+        cout << "Р’Р°Рј РІС‹РїР°Р»Р° Р”Р°РјР°.'3-РѕС‡РєР°'\n";
+        break;
+    case 6:
+        cout << "Р’Р°Рј РІС‹РїР°Р» РљРѕСЂРѕР»СЊ.'4-РѕС‡РєР°.'\n";
+        break;
+    case 7:
+        cout << "Р’Р°Рј РІС‹РїР°Р» РўСѓР·.'11-РѕС‡РєРѕРІ'\n";
+        break;
+    default:
+        cout << "РћС€РёР±РєР°.\n";
+        break;
+    }
 
     return 0;
 }
