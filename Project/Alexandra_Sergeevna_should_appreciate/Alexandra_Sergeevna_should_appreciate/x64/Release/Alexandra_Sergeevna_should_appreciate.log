@@ -1,0 +1,35 @@
+﻿Сборка начата 18.01.2024 14:53:02.
+Уровень детализации журнала: Normal.     1>Проект "C:\University\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Создание "x64\Release\Alexandr.0b012be6.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "x64\Release\Alexandr.0b012be6.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Release\\" /Fd"x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt Alexandra_Sergeevna_should_appreciate.cpp
+         Alexandra_Sergeevna_should_appreciate.cpp
+     1>C:\University\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate.cpp(11,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\University\Alexandra_Sergeevna_should_appreciate\x64\Release\Alexandra_Sergeevna_should_appreciate.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\University\Alexandra_Sergeevna_should_appreciate\x64\Release\Alexandra_Sergeevna_should_appreciate.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /LTCGOUT:"x64\Release\Alexandra_Sergeevna_should_appreciate.iobj" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\University\Alexandra_Sergeevna_should_appreciate\x64\Release\Alexandra_Sergeevna_should_appreciate.lib" /MACHINE:X64 x64\Release\Alexandra_Sergeevna_should_appreciate.obj
+         x64\Release\card.obj
+         x64\Release\game.obj
+         x64\Release\game_logic.obj
+         Создание кода
+         1 of 19 functions ( 5.3%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+           0 functions had inline decision re-evaluated but remain unchanged
+         Создание кода завершено
+         Alexandra_Sergeevna_should_appreciate.vcxproj -> C:\University\Alexandra_Sergeevna_should_appreciate\x64\Release\Alexandra_Sergeevna_should_appreciate.exe
+       FinalizeBuildStatus:
+         Файл "x64\Release\Alexandr.0b012be6.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Release\Alexandr.0b012be6.tlog\Alexandra_Sergeevna_should_appreciate.lastbuildstate".
+     1>Сборка проекта "C:\University\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "C:\University\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         C:\University\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate\Alexandra_Sergeevna_should_appreciate.cpp(11,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+
+    Предупреждений: 1
+    Ошибок: 0
+
+Прошло времени 00:00:01.07
